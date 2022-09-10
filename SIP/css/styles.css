@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+:root{
+    --morado: #2D3047;
+    --azul-claro: #93B7BE;
+    --amarillo: #E0CA3C;
+    --lila: #a799b7;
+    --verde: #048a81;
+    --light: 300;
+    --regular: 400;
+    --bold: 700;
+} 
+body{
+    display: grid;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background: linear-gradient(0deg,rgb(4,138,129,1)  40%, rgb(147,183,190,1) 100%);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-index{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+}
+.header-index h1{
+    font-size: 4rem;
+    font-weight: var(--regular);
+    color: var(--morado);
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+}
+.header-index h3{
+    font-size: 2rem;
+    font-weight: var(--regular);
+    color: var(--morado);
+    text-align: center;
+}
+.main-index {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.main-index form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+.main-index form input{
+    width: 270px;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 2px solid var(--morado);
+    margin-bottom: 30px;
+}
+.main-index form button{
+    width: 150px;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--morado);
+    border: 2px solid var(--morado);
+}
+.main-index form p{
+    font-weight: var(--regular);
+    font-size: 1.05rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+footer p{
+    width: 280px;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+/* iniciousuario */
+/* iniciousuario */
+
+.header-inicio{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--morado);
+    align-items: center;
+}
+.header-inicio .title{
+    font-size: 3rem;
+    font-weight: var(--regular);
+    color: var(--lila);
+    margin: 0;
+}
+.header-inicio .option{
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    color: var(--lila);
+    margin: 0  0  0 10px ;
+}
+.header-inicio div p{
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    color: var(--lila);
+    margin: 10px 5px;
+}
+.header-inicio div{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.header-inicio div img{
+    width: 3.5rem;
+    filter: invert(66%) sepia(27%) saturate(234%) hue-rotate(226deg) brightness(91%) contrast(86%);
+}
+.main-usuario{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-flow: column;
+    margin: 0 auto;
+    padding: 0;
+    place-items: center;
+}
+.main-usuario .card-redes{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+}
+.main-usuario .card-redes div{
+    display: flex;
+    justify-content: space-between;
+}
+.card-redes div img{
+    width: 60px;
+}
+.card-redes div button{
+    width: 150px;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--morado);
+    border: 2px solid var(--morado);
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+}
+.card-redes p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.anadir {
+    display: flex;
+    align-items: flex-start;
+    height: 45%;
+    margin-left: 10px;
+}
+.anadir img{
+    display: flex;
+    width: 60px;
+    justify-content: start;
+}

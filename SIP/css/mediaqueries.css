@@ -1,0 +1,45 @@
+@media (max-width :600px){
+    .main-index form{
+        width: 280px;
+    }
+    .main-usuario{
+        width: 280px;
+    }
+    .main-usuario .card-redes{
+        width: 240px;
+    }
+    .header-inicio .title{
+        font-size: 1.5rem;
+    }
+    .header-inicio .option{
+        font-size: 0.7rem;
+    }
+    .header-inicio div p{
+        font-size: 0.8rem;
+    }
+    .header-inicio div img{
+        width: 1rem;
+    }
+    .card-redes div img{
+        width: 30px;
+    }
+    .card-redes p{
+        font-size: 0.8rem;
+    }
+    .card-redes div button{
+        width: 90px;
+        font-size: 0.8rem;
+    }
+    .anadir {
+        display: grid;
+        justify-self: center;
+        margin-left: 0;
+        height: 73%;
+    }
+    .anadir img{
+        width:30px;
+        
+
+
+    }
+}

@@ -178,3 +178,73 @@ footer p{
     width: 60px;
     justify-content: start;
 }
+/* verdetalle */
+/* verdetalle */
+
+.header-inicio .arrow{
+    width: 20px;
+    margin-left: 10px;
+}
+.main-verdetalle{
+    display: grid;
+    grid-template-columns: minmax(120px, 2fr) minmax(200px, 5fr);
+}
+.card-detalleizq{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 400px;
+    margin: 10px 10px;
+    justify-items: center;
+    align-items: center;
+}
+.card-detalleizq .title p{
+    font-weight: var(--regular);
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+.card-detalleizq .card div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card-detalleizq .card img{
+    width: 5rem;
+}
+.card-detalleizq .card p{
+    font-weight: var(--regular);
+    font-size: 1.5rem;
+}
+.card-detalleizq .card .descripcion{
+    font-weight: var(--regular);
+    font-size: 1.2rem;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    height: 100px;
+}
+.card-detalle{
+    display: grid;
+    margin: 70px 10px;
+    justify-items: center;
+}
+.card-detalle div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.card-detalle div img{
+    width: 5rem;
+}
+.card-detalle div span{
+    font-size: 1.5rem;
+}
+.card-detalle div button{
+    width: 150px;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--morado);
+    border: 2px solid var(--morado);
+}

@@ -12,11 +12,6 @@ $result1 = mysqli_query($conn, $consulta1);
 $emp = $_GET['emp'];
 
 ?>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 

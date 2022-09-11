@@ -38,8 +38,38 @@
     }
     .anadir img{
         width:30px;
-        
+    }
+    .card-detalleizq .title p{
+        font-size: 0.8rem;
+    }
+    .card-detalleizq .card img{
+        width: 2rem;
+    }
+    .card-detalleizq .card p{
+        font-size: 1rem;
+    }
+    .card-detalle div img{
+        width: 2rem;
+    }
+    .card-detalle div span{
+        font-size: 0.8rem;
+    }
+    .card-detalle div button{
+        width: 50px;
+        height: 1.5rem;
+        border-radius: 5px;
+        font-size: 0.5rem;
+        color: var(--morado);
+        border: 2px solid var(--morado);
+    }
+    .card-detalleizq .card p{
+        font-size: 0.8rem;
+    }
+    .card-detalleizq .card .descripcion{
 
-
+        font-size: 0.8rem;
+    }
+    .card-detalleizq{
+        height: 300px;
     }
 }

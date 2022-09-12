@@ -149,6 +149,7 @@ footer p{
 }
 .card-redes div img{
     width: 60px;
+    
 }
 .card-redes div button{
     width: 150px;
@@ -187,7 +188,7 @@ footer p{
 }
 .main-verdetalle{
     display: grid;
-    grid-template-columns: minmax(120px, 2fr) minmax(200px, 5fr);
+    grid-template-columns: minmax(120px, 1.5fr) minmax(200px, 7fr);
 }
 .card-detalleizq{
     display: grid;
@@ -210,6 +211,7 @@ footer p{
 }
 .card-detalleizq .card img{
     width: 5rem;
+    filter: invert(77%) sepia(6%) saturate(1133%) hue-rotate(142deg) brightness(94%) contrast(81%);
 }
 .card-detalleizq .card p{
     font-weight: var(--regular);
@@ -236,6 +238,7 @@ footer p{
 }
 .card-detalle div img{
     width: 5rem;
+    filter: invert(77%) sepia(6%) saturate(1133%) hue-rotate(142deg) brightness(94%) contrast(81%);
 }
 .card-detalle div span{
     font-size: 1.5rem;
@@ -247,4 +250,5 @@ footer p{
     font-size: 1.2rem;
     color: var(--morado);
     border: 2px solid var(--morado);
+    margin-right: 150px;
 }

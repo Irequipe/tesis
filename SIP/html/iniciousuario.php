@@ -57,7 +57,7 @@ $emp = $_GET['emp'];
                         <tr>
                             <img src="../imgs/<?php print($RED = $row1['RED']); ?>.svg" alt="">
                             <p><?php print($RED = $row1['RED']); ?></p>
-                            <button onclick="location.href=''" type="button">
+                            <button onclick="location.href='/html/verdetalle.php?red=' . $RED" type="button">
                                 Consultar</button>
                         </tr>
                     </div>

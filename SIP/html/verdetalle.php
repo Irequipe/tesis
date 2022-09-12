@@ -1,3 +1,20 @@
+<?php
+
+//error_reporting(E_ERROR | E_PARSE);
+session_start();
+include '../PHP_VAL/conexion.php';
+$usr = $_SESSION['usr'];
+
+$conn = OpenCon();
+$RED = $_POST['red'];
+$conn = OpenCon();
+$consulta = "SELECT * FROM red_dato where RED='$RED'";
+$result = mysqli_query($conn, $consulta);
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,13 +31,13 @@
 <body>
     <header class="header-inicio">
         <div>
-            <img class="arrow" src="../imgs/arrow-left.svg" alt="volver">           
+            <img onclick="history.back()" class="arrow" src="../imgs/arrow-left.svg" alt="volver">
             <p class="option">Volver al inicio</p>
         </div>
-        
+
         <p class="title">SIP</p>
         <div>
-            <p>Usuario</p><span><img src="../imgs/user.svg" alt="usuario"></span>
+            <p><?PHP print($usr) ?></p><span><img src="../imgs/user.svg" alt="usuario"></span>
         </div>
     </header>
     <main class="main-verdetalle">
@@ -28,77 +45,27 @@
             <div class="title">
                 <p>Vista detallada</p>
             </div>
-            <div class="card"> 
+            <div class="card">
                 <div>
-                    <img src="../imgs/FACEBOOK.svg" alt="detalle">
-                    <p>Lorem</p>
+                    <img src="../imgs/<?php print($RED); ?>.svg" alt="">
+                    <p><?PHP print($RED) ?></p>
                 </div>
-                <p class="descripcion">Estos son los datos que Lorem está recopilando actualmente.</p>
+                <p class="descripcion">Estos son los datos que <?PHP print($RED) ?> está recopilando actualmente.</p>
             </div>
         </section>
         <section class="card-detalle">
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
-            <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div> <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div> <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div> <div>
-                <img src="../imgs/birthday.svg" alt="detalle">
-                <span>Lorem</span>
-                <button>Ver detalle</button>
-            </div>
+
+            <?php
+            while ($row = $result->fetch_assoc()) {
+            ?>
+                <div>
+                    <img src="../imgs/<?php print($NAME = $row['NAME_DESC']); ?>.svg" alt="detalle">
+                    <span><?php print($NAME = $row['NAME_DESC']); ?></span>
+                    <button>Ver detalle</button>
+                </div>
+            <?php }
+            ?>
+
         </section>
     </main>
     <script src="./js/main.js"></script>

@@ -4,7 +4,6 @@
 if ($_GET) {
     $log = $_GET['log'];
     if ($log == null) {
-        PRINT('AAAAAAAAAAAAAAAA');
 
 ?>
         <!DOCTYPE html>

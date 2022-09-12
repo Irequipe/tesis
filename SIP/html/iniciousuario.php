@@ -57,8 +57,11 @@ $emp = $_GET['emp'];
                         <tr>
                             <img src="../imgs/<?php print($RED = $row1['RED']); ?>.svg" alt="">
                             <p><?php print($RED = $row1['RED']); ?></p>
-                            <button onclick="location.href='/html/verdetalle.php?red=' . $RED" type="button">
-                                Consultar</button>
+                            <form action="/html/verdetalle.php" method="POST">
+                                <button type="submit">
+                                    Consultar</button>
+                                <input type="hidden" value=<?php print($RED = $row1['RED']); ?> id="red" name="red" />
+                            </form>
                         </tr>
                     </div>
             <?php }

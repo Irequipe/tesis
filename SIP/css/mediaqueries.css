@@ -72,4 +72,22 @@
     .card-detalleizq{
         height: 300px;
     }
+    .main-nuevared{
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: auto;
+    }
+    .nuevared-mid label{
+        font-size: 1.2rem;
+    }
+    .nuevared-mid input{
+        font-size: 1.2rem;
+        width: 60%;
+    }
+    .nuevared-right button{
+        width: 80px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+
 }

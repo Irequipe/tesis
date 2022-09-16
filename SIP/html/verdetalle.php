@@ -54,7 +54,6 @@ $result = mysqli_query($conn, $consulta);
             </div>
         </section>
         <section class="card-detalle">
-
             <?php
             while ($row = $result->fetch_assoc()) {
             ?>
@@ -65,6 +64,9 @@ $result = mysqli_query($conn, $consulta);
                 </div>
             <?php }
             ?>
+        </section class="card-detalle-abierto inactive">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor minus voluptate, quidem quisquam cumque, pariatur dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. </p>
+        <section>
 
         </section>
     </main>

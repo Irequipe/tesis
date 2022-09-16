@@ -252,3 +252,75 @@ footer p{
     border: 2px solid var(--morado);
     margin-right: 150px;
 }
+.card-detalle-abierto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+    width: 280px;
+}
+
+.card-detalle-abierto .inactive{
+    display: none;
+}
+/* nuevared */
+/* nuevared */
+.main-nuevared{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    height: 88.5vh;
+}
+.nuevared-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.nuevared-left p {
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+}
+.nuevared-mid{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+.nuevared-mid p{
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+.nuevared-mid div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.nuevared-mid label{
+    font-size: 2rem;
+    font-weight: var(--regular);
+}
+.nuevared-mid input{
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    margin-bottom: 10px;
+}
+.nuevared-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.nuevared-right button{
+    width: 90px;
+    height: 50px;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}

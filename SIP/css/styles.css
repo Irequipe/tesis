@@ -432,3 +432,59 @@ footer p{
     cursor: pointer;
     text-align: center;
 }
+/* nuevoparametro */
+/* nuevoparametro */
+
+.main-nuevoparametro{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    height: 88.5vh;
+}
+.nparametro-left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.nparametro-left .uno{
+    font-size: 1rem;
+}
+.nparametro-left .dos{
+    font-size: 2rem;
+}
+.nparametro-left div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nparametro-left div img{
+    width: 40px;
+    margin-right: 10px;
+}
+.nparametro-left div span{
+    font-size: 1.5rem;
+}
+.nparametro-mid{
+    display: flex;
+    align-items: center;
+}
+.nparametro-mid input{
+    width: 100%;
+    height: 200px;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.nparametro-right{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+.nparametro-right button{
+    width: 120px;
+    height: 50px;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+}

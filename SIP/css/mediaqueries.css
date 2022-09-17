@@ -93,4 +93,11 @@
         font-size: 1rem;
         margin-right: 5px;
     }
+    .main-nuevoparametro{
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: auto; 
+        height: 88.5vh;
+        justify-content: center;
+    }
 }

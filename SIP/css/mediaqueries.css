@@ -100,4 +100,7 @@
         height: 88.5vh;
         justify-content: center;
     }
+    .nparametro-right{
+        justify-content: center;
+    }
 }

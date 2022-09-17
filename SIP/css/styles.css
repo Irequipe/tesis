@@ -467,12 +467,21 @@ footer p{
     display: flex;
     align-items: center;
 }
+.nparametro-left input{
+    width: 90%;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 10px;
+
+}
 .nparametro-mid input{
     width: 100%;
     height: 200px;
     border: 2px solid var(--morado);
     border-radius: 5px;
     font-size: 1.2rem;
+    margin: 10px;
 }
 .nparametro-right{
     display: flex;

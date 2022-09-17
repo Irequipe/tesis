@@ -60,7 +60,7 @@ $result = mysqli_query($conn, $consulta);
                 <div>
                     <img src="../imgs/<?php print($NAME = $row['NAME_DESC']); ?>.svg" alt="detalle">
                     <span><?php print($NAME = $row['NAME_DESC']); ?></span>
-                    <button>Ver detalle</button>
+                    <button>Editar detalle</button>
                 </div>
             <?php }
             ?>

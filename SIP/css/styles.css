@@ -324,3 +324,111 @@ footer p{
     font-size: 1.5rem;
     margin-bottom: 50px;
 }
+/* nuevaredadmin */
+/* nuevaredadmin */
+
+.main-nuevaredadmin{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    height: 88.5vh;
+}
+.nuevaredadmin-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.nuevaredadmin-left p {
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+}
+.nuevaredadmin-mid{
+    display: grid;
+    height: auto;
+    grid-template-rows: 1fr 1fr 1fr 6fr;
+    align-content: center;
+    justify-items: center;
+}
+.nuevaredadmin-mid .bottom input{ 
+    width: 100%;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.nuevaredadmin-mid .bottom div img{ 
+    width: 30px;
+    margin-right:5px;
+    
+}
+.nuevaredadmin-mid .bottom div span{ 
+    font-size: 0.8rem;
+}
+.nuevaredadmin-mid p{
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+.nuevaredadmin-mid .mid .insertar{
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+    overflow-wrap: break-word;
+    border: none;
+    text-align: center;
+    margin: 0px;
+}
+.nuevaredadmin-mid div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.nuevaredadmin-mid .bottom {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.nuevaredadmin-mid .bottom div div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+.nuevaredadmin-mid label{
+    font-size: 2rem;
+    font-weight: var(--regular);
+}
+.nuevaredadmin-mid input{
+    font-size: 1rem;
+    font-weight: var(--regular);
+    margin-bottom: 10px;
+}
+.nuevaredadmin-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.nuevaredadmin-right #anadir-nredadmin{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    cursor: pointer;
+}
+.nuevaredadmin-right #anadir-nredadmin span{
+   font-size: 1rem;
+}
+.nuevaredadmin-right button{
+    width: 120px;
+    height: 50px;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+    text-align: center;
+}

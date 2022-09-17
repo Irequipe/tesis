@@ -1,7 +1,7 @@
 let anadirRedAdmin = document.querySelector("#anadir-nredadmin");
 let divContenedor= document.querySelector("#div-contenedor");
 let limiteDatos = 20;
-let i = 1;
+let i = 2;
 
 anadirRedAdmin.addEventListener('click', generarNuevosInputs);
 

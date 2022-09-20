@@ -3,6 +3,8 @@ let divContenedor= document.querySelector("#div-contenedor");
 let limiteDatos = 20;
 let i = 2;
 
+
+
 anadirRedAdmin.addEventListener('click', generarNuevosInputs);
 
     function generarNuevosInputs(){
@@ -30,3 +32,4 @@ anadirRedAdmin.addEventListener('click', generarNuevosInputs);
             alert('No puede ingresar más parametros')
         }
 }
+

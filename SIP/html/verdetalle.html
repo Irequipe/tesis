@@ -60,17 +60,18 @@ $result = mysqli_query($conn, $consulta);
                 <div>
                     <img src="../imgs/<?php print($NAME = $row['NAME_DESC']); ?>.svg" alt="detalle">
                     <span><?php print($NAME = $row['NAME_DESC']); ?></span>
-                    <button>Ver detalle</button>
+                    <button id="btnVerDetalle">Ver detalle</button>
                 </div>
             <?php }
             ?>
-        <section class="card-detalle-abierto inactive">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor minus voluptate, quidem quisquam cumque, pariatur dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. </p>
-        </section>
+            <section class="card-detalle-abierto inactive" id="cardDetalle">
+                <span id="cerrarCard">X</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor minus voluptate, quidem quisquam cumque, pariatur dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum</p>
+            </section>
 
         </section>
     </main>
-    <script src="./js/main.js"></script>
+    <script src="../js/otro.js"></script>
 </body>
 
 </html>

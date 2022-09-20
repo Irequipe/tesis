@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 :root{
     --morado: #2D3047;
-    --azul-claro: #93B7BE;
+    --azul-claro: ##FFF8F0;
     --amarillo: #E0CA3C;
     --lila: #a799b7;
-    --verde: #048a81;
+    --verde: #f4d06f;
     --light: 300;
     --regular: 400;
     --bold: 700;
@@ -237,7 +237,8 @@ footer p{
     padding: 10px;
 }
 .card-detalle div img{
-    width: 5rem;
+    text-align: left;
+    width: 2rem;
     filter: invert(77%) sepia(6%) saturate(1133%) hue-rotate(142deg) brightness(94%) contrast(81%);
 }
 .card-detalle div span{
@@ -267,10 +268,11 @@ footer p{
     z-index: 5;
 }
 .card-detalle .card-detalle-abierto p{
-    width: 100%;
+    width: 90%;
     font-size: 1rem;
     margin: 10px 10px;
     overflow-wrap: break-word;
+    text-align: center ;
 }
 .card-detalle .card-detalle-abierto span{
     position: relative;

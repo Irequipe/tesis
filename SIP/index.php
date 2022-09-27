@@ -26,8 +26,8 @@ if ($_GET) {
             </header>
             <main class="main-index">
                 <form action="../PHP_VAL/validar_Login.php" method="post">
-                    <input type="usr" placeholder="Usuario" id='usr' name="usr">
-                    <input type="password" placeholder="Contraseña" id='password' name="password">
+                    <input type="usr" placeholder="Usuario" id="usr" name="usr">
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
                     <button type="submit">Ingresar</button>
                     <p>Credenciales Incorrectas</p>
                     <p>No tienes una cuenta? <a href="#">Registrate</a></p>
@@ -35,7 +35,7 @@ if ($_GET) {
                 </form>
             </main>
             <footer>
-                <p>Estás a un clic de tener en un solo lugar, toda la, información que fue recolectada por las diferentes aplicaciones que usas.</p>
+                <p>Estás a un clic de conocer que información es recolectada por las diferentes redes sociales que utilizas</p>
             </footer>
             <script src="./js/main.js"></script>
         </body>
@@ -74,7 +74,7 @@ if ($_GET) {
             </form>
         </main>
         <footer>
-            <p>Estás a un clic de tener en un solo lugar, toda la, información que fue recolectada por las diferentes aplicaciones que usas.</p>
+            <p>Estás a un clic de conocer que información es recolectada por las diferentes redes sociales que utilizas</p>
         </footer>
         <script src="./js/main.js"></script>
     </body>

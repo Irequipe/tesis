@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
-:root{
+
+:root {
     --morado: #2D3047;
     --azul-claro: ##FFF8F0;
     --amarillo: #E0CA3C;
@@ -8,29 +9,31 @@
     --light: 300;
     --regular: 400;
     --bold: 700;
-} 
+}
+
 /* hola */
-body{
+body {
     display: grid;
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-    background: linear-gradient(0deg,rgb(4,138,129,1)  40%, rgb(147,183,190,1) 100%);
-    background-position: center ;
+    background: linear-gradient(0deg, rgb(4, 138, 129, 1) 40%, rgb(147, 183, 190, 1) 100%);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.header-index{
+.header-index {
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
 
 }
-.header-index h1{
+
+.header-index h1 {
     font-size: 4rem;
     font-weight: var(--regular);
     color: var(--morado);
@@ -38,24 +41,28 @@ body{
     margin-bottom: 0;
 
 }
-.header-index h3{
+
+.header-index h3 {
     font-size: 2rem;
     font-weight: var(--regular);
     color: var(--morado);
     text-align: center;
 }
+
 .main-index {
     padding-top: 3rem;
     display: flex;
     justify-content: center;
 }
-.main-index form{
+
+.main-index form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 500px;
 }
-.main-index form input{
+
+.main-index form input {
     width: 270px;
     height: 2.5rem;
     border-radius: 5px;
@@ -63,7 +70,8 @@ body{
     border: 2px solid var(--morado);
     margin-bottom: 30px;
 }
-.main-index form button{
+
+.main-index form button {
     width: 150px;
     height: 2.5rem;
     border-radius: 5px;
@@ -71,16 +79,19 @@ body{
     color: var(--morado);
     border: 2px solid var(--morado);
 }
-.main-index form p{
+
+.main-index form p {
     font-weight: var(--regular);
     font-size: 1.05rem;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
-footer p{
+
+footer p {
     width: 280px;
     font-size: 1.05rem;
     text-align: center;
@@ -89,7 +100,7 @@ footer p{
 /* iniciousuario */
 /* iniciousuario */
 
-.header-inicio{
+.header-inicio {
     width: 100%;
     height: 5rem;
     display: flex;
@@ -98,34 +109,40 @@ footer p{
     background-color: var(--morado);
     align-items: center;
 }
-.header-inicio .title{
+
+.header-inicio .title {
     font-size: 3rem;
     font-weight: var(--regular);
     color: var(--lila);
     margin: 0;
 }
-.header-inicio .option{
+
+.header-inicio .option {
     font-size: 1.5rem;
     font-weight: var(--regular);
     color: var(--lila);
-    margin: 0  0  0 10px ;
+    margin: 0 0 0 10px;
 }
-.header-inicio div p{
+
+.header-inicio div p {
     font-size: 1.5rem;
     font-weight: var(--regular);
     color: var(--lila);
     margin: 10px 5px;
 }
-.header-inicio div{
+
+.header-inicio div {
     margin-right: 10px;
     display: flex;
     align-items: center;
 }
-.header-inicio div img{
+
+.header-inicio div img {
     width: 3.5rem;
     filter: invert(66%) sepia(27%) saturate(234%) hue-rotate(226deg) brightness(91%) contrast(86%);
 }
-.main-usuario{
+
+.main-usuario {
     width: 100%;
     height: 80vh;
     display: grid;
@@ -135,23 +152,27 @@ footer p{
     padding: 0;
     place-items: center;
 }
-.main-usuario .card-redes{
+
+.main-usuario .card-redes {
     display: flex;
-    justify-content: space-between;
+    justify-content: normal;
     align-content: space-around;
     flex-direction: column;
     width: 500px;
     height: 300px;
 }
-.main-usuario .card-redes div{
+
+.main-usuario .card-redes div {
     display: flex;
     justify-content: space-between;
 }
-.card-redes div img{
+
+.card-redes div img {
     width: 60px;
-    
+
 }
-.card-redes div button{
+
+.card-redes div button {
     width: 150px;
     height: 2.5rem;
     border-radius: 5px;
@@ -163,34 +184,40 @@ footer p{
     align-self: center;
     align-content: center;
 }
-.card-redes p{
+
+.card-redes p {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
 }
+
 .anadir {
     display: flex;
     align-items: flex-start;
     height: 45%;
     margin-left: 10px;
 }
-.anadir img{
+
+.anadir img {
     display: flex;
     width: 60px;
     justify-content: start;
 }
+
 /* verdetalle */
 /* verdetalle */
 
-.header-inicio .arrow{
+.header-inicio .arrow {
     width: 20px;
     margin-left: 10px;
 }
-.main-verdetalle{
+
+.main-verdetalle {
     display: grid;
     grid-template-columns: minmax(120px, 1.5fr) minmax(200px, 7fr);
 }
-.card-detalleizq{
+
+.card-detalleizq {
     display: grid;
     grid-template-rows: 1fr 4fr;
     height: 400px;
@@ -198,63 +225,76 @@ footer p{
     justify-items: center;
     align-items: center;
 }
-.card-detalleizq .title p{
+
+.card-detalleizq .title p {
     font-weight: var(--regular);
     font-size: 1.5rem;
     text-align: center;
     overflow-wrap: anywhere;
 }
-.card-detalleizq .card div{
+
+.card-detalleizq .card div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.card-detalleizq .card img{
+
+.card-detalleizq .card img {
     width: 5rem;
     filter: invert(77%) sepia(6%) saturate(1133%) hue-rotate(142deg) brightness(94%) contrast(81%);
 }
-.card-detalleizq .card p{
+
+.card-detalleizq .card p {
     font-weight: var(--regular);
     font-size: 1.5rem;
 }
-.card-detalleizq .card .descripcion{
+
+.card-detalleizq .card .descripcion {
     font-weight: var(--regular);
     font-size: 1.2rem;
     border: 2px solid var(--morado);
     border-radius: 5px;
     height: 100px;
 }
-.card-detalle{
+
+.card-detalle {
     display: grid;
     margin: 70px 10px;
-    justify-items: center;
+    justify-items: right;
 }
-.card-detalle div{
+
+.card-detalle div {
     display: flex;
-    width: 100%;
+    width: 95%;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 0.5rem;
 }
-.card-detalle div img{
+
+.card-detalle div img {
     text-align: left;
     width: 2rem;
     filter: invert(77%) sepia(6%) saturate(1133%) hue-rotate(142deg) brightness(94%) contrast(81%);
 }
-.card-detalle div span{
+
+.card-detalle div span {
     font-size: 1.5rem;
 }
-.card-detalle div button{
-    width: 150px;
-    height: 2.5rem;
+
+.card-detalle div button {
+    max-width: 11rem;
+    max-height: 4rem;
     border-radius: 5px;
     font-size: 1.2rem;
     color: var(--morado);
     border: 2px solid var(--morado);
     margin-right: 150px;
+    margin-left: 150px;
     cursor: pointer;
+    
 }
-.card-detalle .card-detalle-abierto{
+
+.card-detalle .card-detalle-abierto {
     position: relative;
     width: 800px;
     height: 300px;
@@ -267,14 +307,16 @@ footer p{
     margin: auto;
     z-index: 5;
 }
-.card-detalle .card-detalle-abierto p{
+
+.card-detalle .card-detalle-abierto p {
     width: 90%;
     font-size: 1rem;
     margin: 10px 10px;
     overflow-wrap: break-word;
-    text-align: center ;
+    text-align: center;
 }
-.card-detalle .card-detalle-abierto span{
+
+.card-detalle .card-detalle-abierto span {
     position: relative;
     border: 2px solid var(--morado);
     color: var(--morado);
@@ -286,32 +328,38 @@ footer p{
     cursor: pointer;
 
 }
-.card-detalle .inactive{
+
+.card-detalle .inactive {
     display: none;
 }
+
 /* nuevared */
 /* nuevared */
-.main-nuevared{
+.main-nuevared {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-columns: 1fr 2fr 1fr;
     height: 88.5vh;
 }
+
 .nuevared-left {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
+
 .nuevared-left p {
     display: flex;
     font-size: 1.7rem;
     font-weight: var(--regular);
 }
-.nuevared-mid{
+
+.nuevared-mid {
     display: grid;
     align-content: center;
     justify-items: center;
 }
-.nuevared-mid p{
+
+.nuevared-mid p {
     width: 90%;
     font-size: 1.7rem;
     font-weight: var(--regular);
@@ -319,27 +367,32 @@ footer p{
     border-radius: 5px;
     overflow-wrap: break-word;
 }
-.nuevared-mid div{
+
+.nuevared-mid div {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-self: center;
 }
-.nuevared-mid label{
+
+.nuevared-mid label {
     font-size: 2rem;
     font-weight: var(--regular);
 }
-.nuevared-mid input{
+
+.nuevared-mid input {
     font-size: 1.5rem;
     font-weight: var(--regular);
     margin-bottom: 10px;
 }
-.nuevared-right{
+
+.nuevared-right {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-.nuevared-right button{
+
+.nuevared-right button {
     width: 90px;
     height: 50px;
     border: 2px solid var(--morado);
@@ -347,46 +400,53 @@ footer p{
     font-size: 1.5rem;
     margin-bottom: 50px;
 }
+
 /* nuevaredadmin */
 /* nuevaredadmin */
 
-.main-nuevaredadmin{
+.main-nuevaredadmin {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-columns: 1fr 2fr 1fr;
     height: 88.5vh;
 }
+
 .nuevaredadmin-left {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
+
 .nuevaredadmin-left p {
     display: flex;
     font-size: 1.7rem;
     font-weight: var(--regular);
 }
-.nuevaredadmin-mid{
+
+.nuevaredadmin-mid {
     display: grid;
     height: auto;
     grid-template-rows: 1fr 1fr 1fr 6fr;
     align-content: center;
     justify-items: center;
 }
-.nuevaredadmin-mid .bottom input{ 
+
+.nuevaredadmin-mid .bottom input {
     width: 100%;
     margin-right: 10px;
     font-size: 1rem;
 }
 
-.nuevaredadmin-mid .bottom div img{ 
+.nuevaredadmin-mid .bottom div img {
     width: 30px;
-    margin-right:5px;
-    
+    margin-right: 5px;
+
 }
-.nuevaredadmin-mid .bottom div span{ 
+
+.nuevaredadmin-mid .bottom div span {
     font-size: 0.8rem;
 }
-.nuevaredadmin-mid p{
+
+.nuevaredadmin-mid p {
     width: 90%;
     font-size: 1.7rem;
     font-weight: var(--regular);
@@ -394,7 +454,8 @@ footer p{
     border-radius: 5px;
     overflow-wrap: break-word;
 }
-.nuevaredadmin-mid .mid .insertar{
+
+.nuevaredadmin-mid .mid .insertar {
     width: 100%;
     font-size: 1.7rem;
     font-weight: var(--regular);
@@ -403,18 +464,21 @@ footer p{
     text-align: center;
     margin: 0px;
 }
-.nuevaredadmin-mid div{
+
+.nuevaredadmin-mid div {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-self: center;
 }
+
 .nuevaredadmin-mid .bottom {
     display: flex;
     width: 100%;
     flex-direction: column;
 }
-.nuevaredadmin-mid .bottom div div{
+
+.nuevaredadmin-mid .bottom div div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -422,30 +486,36 @@ footer p{
     cursor: pointer;
 
 }
-.nuevaredadmin-mid label{
+
+.nuevaredadmin-mid label {
     font-size: 2rem;
     font-weight: var(--regular);
 }
-.nuevaredadmin-mid input{
+
+.nuevaredadmin-mid input {
     font-size: 1rem;
     font-weight: var(--regular);
     margin-bottom: 10px;
 }
-.nuevaredadmin-right{
+
+.nuevaredadmin-right {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-.nuevaredadmin-right #anadir-nredadmin{
+
+.nuevaredadmin-right #anadir-nredadmin {
     display: flex;
     flex-direction: column;
     align-self: center;
     cursor: pointer;
 }
-.nuevaredadmin-right #anadir-nredadmin span{
+
+.nuevaredadmin-right #anadir-nredadmin span {
     font-size: 1rem;
 }
-.nuevaredadmin-right button{
+
+.nuevaredadmin-right button {
     width: 120px;
     height: 50px;
     border: 2px solid var(--morado);
@@ -455,43 +525,52 @@ footer p{
     cursor: pointer;
     text-align: center;
 }
+
 /* nuevoparametro */
 /* nuevoparametro */
 
-.main-nuevoparametro{
+.main-nuevoparametro {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; 
+    grid-template-columns: 1fr 2fr 1fr;
     height: 88.5vh;
 }
-.nparametro-left{
+
+.nparametro-left {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
 }
-.nparametro-left .uno{
+
+.nparametro-left .uno {
     font-size: 1rem;
 }
-.nparametro-left .dos{
+
+.nparametro-left .dos {
     font-size: 2rem;
 }
-.nparametro-left div{
+
+.nparametro-left div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.nparametro-left div img{
+
+.nparametro-left div img {
     width: 40px;
     margin-right: 10px;
 }
-.nparametro-left div span{
+
+.nparametro-left div span {
     font-size: 1.5rem;
 }
-.nparametro-mid{
+
+.nparametro-mid {
     display: flex;
     align-items: center;
     padding-top: 50px;
 }
-.nparametro-left input{
+
+.nparametro-left input {
     width: 90%;
     border: 2px solid var(--morado);
     border-radius: 5px;
@@ -500,7 +579,8 @@ footer p{
     padding-top: 10px;
 
 }
-.nparametro-mid textarea{
+
+.nparametro-mid textarea {
     width: 100%;
     height: 200px;
     border: 2px solid var(--morado);
@@ -508,14 +588,16 @@ footer p{
     font-size: 1.2rem;
     margin: 10px;
     text-align: justify;
-    
+
 }
-.nparametro-right{
+
+.nparametro-right {
     display: flex;
     align-items: flex-end;
     margin-bottom: 30px;
 }
-.nparametro-right button{
+
+.nparametro-right button {
     width: 120px;
     height: 50px;
     border: 2px solid var(--morado);
@@ -523,4 +605,21 @@ footer p{
     font-size: 1.5rem;
     margin-bottom: 50px;
     cursor: pointer;
+}
+
+
+.imagen {
+    max-width: 2rem;
+    max-height: 2rem;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.spann {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.buttonDet{
+    
 }

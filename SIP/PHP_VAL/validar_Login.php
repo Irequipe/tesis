@@ -19,25 +19,23 @@ $result = mysqli_query($conn, $consulta);
 while ($row = $result->fetch_assoc()) {
     $user = $row['USER'];
     $pass = $row['PASS'];
-    $activo = $row['ACTIVE'];
 }
 
 
-$consulta1 = "SELECT RED FROM red_usr where USER='$usuario'";
-$result1 = mysqli_query($conn, $consulta1);
+if ($user == $usuario and $pass == $password) {
+    $consulta1 = "SELECT RED FROM red_usr where USER='$usuario'";
+    $result1 = mysqli_query($conn, $consulta1);
 
-while ($row1 = $result1->fetch_assoc()) {
-    $emp = $row1['RED'];
-}
+    while ($row1 = $result1->fetch_assoc()) {
+        $emp = $row1['RED'];
+    }
 
-if ($emp == null) {
-    $emp = null;
-} else {
-    $emp = 1;
-}
+    if ($emp == null) {
+        $emp = null;
+    } else {
+        $emp = 1;
+    }
 
-
-if ($user == $usuario and $pass == $password and $activo == 1) {
     header("Location: ../html/iniciousuario.php?emp=" . $emp);
     die();
 } else {

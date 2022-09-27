@@ -9,6 +9,9 @@ $conn = OpenCon();
 $consulta1 = "SELECT RED FROM red_usr where USER='$usr'";
 $result1 = mysqli_query($conn, $consulta1);
 
+$consulta2 = "SELECT * FROM redes WHERE NAME NOT IN (SELECT RED FROM red_usr WHERE USER='$usr')";
+$result2 = mysqli_query($conn, $consulta2);
+
 $emp = $_GET['emp'];
 
 ?>
@@ -58,9 +61,9 @@ $emp = $_GET['emp'];
                             <img src="../imgs/<?php print($RED = $row1['RED']); ?>.svg" alt="">
                             <p><?php print($RED = $row1['RED']); ?></p>
                             <form action="/html/verdetalle.php" method="POST">
+                                <input style="visibility: hidden;" value=<?php print($RED = $row1['RED']); ?> id="red" name="red" />
                                 <button type="submit">
                                     Consultar</button>
-                                <input type="hidden" value=<?php print($RED = $row1['RED']); ?> id="red" name="red" />
                             </form>
                         </tr>
                     </div>
@@ -83,8 +86,30 @@ $emp = $_GET['emp'];
             </div> -->
 
         </section>
+
+
+
+
+
+
+
+
         <section class="anadir">
-            <img src="../imgs/add.svg" alt="">
+            <form method="POST" action="/html/verdetalle.php">
+                <div class="col">
+                    <th> <select class="" name="red_add" id="red_add">
+                            <?php
+                            while ($row2 = $result2->fetch_assoc()) { ?>
+                                <option value="<?php print($name = $row2['NAME']); ?>"><?php print($name = $row2['NAME']); ?></option>
+
+
+                            <?php }
+                            ?>
+                    </th>
+                    </select>
+                    <button type="submit" class="btn btn-success" href="">Asociar</button>
+                </div>
+            </form>
         </section>
 
     </main>

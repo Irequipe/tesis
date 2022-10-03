@@ -11,6 +11,7 @@ $result1 = mysqli_query($conn, $consulta1);
 
 $consulta2 = "SELECT * FROM redes WHERE NAME NOT IN (SELECT RED FROM red_usr WHERE USER='$usr')";
 $result2 = mysqli_query($conn, $consulta2);
+$result3 = mysqli_query($conn, $consulta2);
 
 $emp = $_GET['emp'];
 
@@ -33,7 +34,10 @@ $emp = $_GET['emp'];
         <p class="option">Vista general</p>
         <p class="title">SIP</p>
         <div>
-            <p><?PHP print($usr) ?></p><span><img src="../imgs/user.svg" alt="usuario"></span>
+            <p><?PHP print($usr) ?></p>
+            <a href="../PHP_VAL/logout.php">
+            <span><img src="../imgs/user.svg" alt="usuario" href></span>
+            </a>
         </div>
     </header>
     <main class="main-usuario">
@@ -86,32 +90,33 @@ $emp = $_GET['emp'];
             </div> -->
 
         </section>
+        <?php
+        $row3 = $result3->fetch_assoc();
+        if (empty($row3) != null) {
 
+        ?>
+        <?php } else { ?>
+            <section class="anadir">
+                <form action="../PHP_VAL/asoc_Red.php" method="POST">
+                    <input style="visibility: hidden;" type="hidden" value="<?php print($emp); ?>" id="emp" name="emp" />
 
+                    <div class="col">
+                        <th>
+                            <select class="" name="red_add" id="red_add">
+                                <?php
+                                while ($row2 = $result2->fetch_assoc()) { ?>
+                                    <option value="<?php print($name = $row2['NAME']); ?>"><?php print($name = $row2['NAME']); ?>
+                                    </option>
+                                <?php }
+                                ?>
+                            </select>
+                        </th>
 
-
-
-
-
-
-        <section class="anadir">
-            <form method="POST" action="/html/verdetalle.php">
-                <div class="col">
-                    <th> <select class="" name="red_add" id="red_add">
-                            <?php
-                            while ($row2 = $result2->fetch_assoc()) { ?>
-                                <option value="<?php print($name = $row2['NAME']); ?>"><?php print($name = $row2['NAME']); ?></option>
-
-
-                            <?php }
-                            ?>
-                    </th>
-                    </select>
-                    <button type="submit" class="btn btn-success" href="">Asociar</button>
-                </div>
-            </form>
-        </section>
-
+                        <button type=" submit" class="btn btn-success" href="">Asociar</button>
+                    </div>
+                </form>
+            </section>
+        <?php } ?>
     </main>
     <script src="./js/main.js"></script>
 </body>

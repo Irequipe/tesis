@@ -37,7 +37,10 @@ $result = mysqli_query($conn, $consulta);
 
         <p class="title">SIP</p>
         <div>
-            <p><?PHP print($usr) ?></p><span><img src="../imgs/user.svg" alt="usuario"></span>
+            <p><?PHP print($usr) ?></p>
+            <a href="../PHP_VAL/logout.php">
+                <span><img src="../imgs/user.svg" alt="usuario" href></span>
+            </a>
         </div>
     </header>
     <main class="main-verdetalle">

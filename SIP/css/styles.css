@@ -131,6 +131,14 @@ footer p {
     margin: 10px 5px;
 }
 
+.header-inicio div a {
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    color: var(--lila);
+    margin: 10px 5px;
+}
+
+
 .header-inicio div {
     margin-right: 10px;
     display: flex;

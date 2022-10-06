@@ -6,10 +6,8 @@ $usr = $_SESSION['usr'];
 
 $conn = OpenCon();
 
-$consulta1 = "SELECT RED FROM red_usr where USER='$usr'";
+$consulta1 = "SELECT * FROM redes";
 $result1 = mysqli_query($conn, $consulta1);
-
-$emp = $_GET['emp'];
 
 ?>
 <!DOCTYPE html>
@@ -39,33 +37,25 @@ $emp = $_GET['emp'];
         <section class="card-redes">
             <?php
 
-            if ($emp == null) {
+
+            ?>
+            <p>Estas son las redes sociales registradas</p>
+            <?php
+            while ($row1 = $result1->fetch_assoc()) {
             ?>
                 <div>
                     <tr>
-                        <p><?php print('NO TIENES REDES SOCIALES ASOCIADAS'); ?></p>
+                        <img src="../imgs/<?php print($RED = $row1['NAME']); ?>.svg" alt="">
+                        <p><?php print($RED = $row1['NAME']); ?></p>
+                        <form action="/html/verdetalleAdmin.php" method="POST">
+                            <input style="visibility: hidden;" value=<?php print($RED = $row1['NAME']); ?> id="red" name="red" />
+                            <button type="submit">
+                                Gestionar</button>
+                        </form>
                     </tr>
                 </div>
-            <?php } else {
+            <?php } ?>
 
-            ?>
-                <p>Estas son tus redes sociales asociadas</p>
-                <?php
-                while ($row1 = $result1->fetch_assoc()) {
-                ?>
-                    <div>
-                        <tr>
-                            <img src="../imgs/<?php print($RED = $row1['RED']); ?>.svg" alt="">
-                            <p><?php print($RED = $row1['RED']); ?></p>
-                            <form action="/html/verdetalle.php" method="POST">
-                                <button type="submit">
-                                    Gestionar</button>
-                                <input type="hidden" value=<?php print($RED = $row1['RED']); ?> id="red" name="red" />
-                            </form>
-                        </tr>
-                    </div>
-            <?php }
-            } ?>
 
 
 
@@ -83,9 +73,7 @@ $emp = $_GET['emp'];
             </div> -->
 
         </section>
-        <section class="anadir">
-            <img src="../imgs/add.svg" alt="">
-        </section>
+
 
     </main>
     <script src="./js/main.js"></script>

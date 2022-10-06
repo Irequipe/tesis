@@ -6,8 +6,18 @@ include '../PHP_VAL/conexion.php';
 $usr = $_SESSION['usr'];
 
 $conn = OpenCon();
-$RED = $_POST['red'];
-$conn = OpenCon();
+
+if (isset($_GET['edt'])) {
+    $edt = $_GET['edt'];
+}
+
+if (isset($_POST['red'])) {
+    $RED = $_POST['red'];
+}
+
+if (isset($_GET['red'])) {
+    $RED = $_GET['red'];
+}
 $consulta = "SELECT * FROM red_dato where RED='$RED'";
 $result = mysqli_query($conn, $consulta);
 
@@ -37,7 +47,10 @@ $result = mysqli_query($conn, $consulta);
 
         <p class="title">SIP</p>
         <div>
-            <p><?PHP print($usr) ?></p><span><img src="../imgs/user.svg" alt="usuario"></span>
+            <p><?PHP print($usr) ?></p>
+            <a href="../PHP_VAL/logout.php">
+                <span><img src="../imgs/user.svg" alt="usuario" href></span>
+            </a>
         </div>
     </header>
     <main class="main-verdetalle">
@@ -50,23 +63,33 @@ $result = mysqli_query($conn, $consulta);
                     <img src="../imgs/<?php print($RED); ?>.svg" alt="">
                     <p><?PHP print($RED) ?></p>
                 </div>
+                <?php if (isset($_GET['edt'])) {
+                    $edt = $_GET['edt'];
+                ?>
+                    <p class="descripcion">Parametro actualizado con exito</p>
+                <?php
+                } ?>
                 <p class="descripcion">Estos son los datos que <?PHP print($RED) ?> está recopilando actualmente.</p>
             </div>
         </section>
         <section class="card-detalle">
             <?php
+            $count = 1;
             while ($row = $result->fetch_assoc()) {
             ?>
                 <div>
-                    <img src="../imgs/<?php print($NAME = $row['NAME_DESC']); ?>.svg" alt="detalle">
-                    <span><?php print($NAME = $row['NAME_DESC']); ?></span>
-                    <button>Editar detalle</button>
+                    <img class="imagen" src="../imgs/<?php print($count); ?>.svg" alt="img<?php print($count); ?>">
+                    <span class="spann"><?php print($NAME = $row['NAME_DESC']); ?></span>
+                    <form style="visibility: hidden;" action="../html/editarparametro.php" method="POST">
+                        <input style="visibility: hidden;" type="hidden" value="<?PHP print($RED) ?>" id="red" name="red" />
+                        <input style="visibility: hidden;" type="hidden" value="<?php print($DESC = $row['NAME_DESC']); ?>" id="name" name="name" />
+                        <input style="visibility: hidden;" type="hidden" value="<?PHP print($DATO = $row['DATO_DESC']) ?>" id="desc" name="desc" />
+                        <button class="buttonDet" style="visibility: visible;" visible type="submit">Editar detalle</button>
+                    </form>
                 </div>
-            <?php }
+            <?php ++$count;
+            }
             ?>
-        <section class="card-detalle-abierto inactive">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor minus voluptate, quidem quisquam cumque, pariatur dignissimos aperiam delectus voluptatem assumenda suscipit eaque unde. Nihil vero dolorum hic eum odit. </p>
-        </section>
 
         </section>
     </main>

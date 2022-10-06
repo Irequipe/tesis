@@ -262,7 +262,7 @@ footer p {
     font-size: 1.2rem;
     border: 2px solid var(--morado);
     border-radius: 5px;
-    height: 100px;
+    height: 100%;
 }
 
 .card-detalle {
@@ -299,7 +299,7 @@ footer p {
     margin-right: 150px;
     margin-left: 150px;
     cursor: pointer;
-    
+
 }
 
 .card-detalle .card-detalle-abierto {
@@ -575,7 +575,9 @@ footer p {
 .nparametro-mid {
     display: flex;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .nparametro-left input {
@@ -628,6 +630,9 @@ footer p {
     padding-left: 1rem;
 }
 
-.buttonDet{
-    
+.pDesc {
+    font-weight: var(--regular);
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-wrap: anywhere;
 }

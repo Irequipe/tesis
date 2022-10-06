@@ -19,6 +19,7 @@ $result = mysqli_query($conn, $consulta);
 while ($row = $result->fetch_assoc()) {
     $user = $row['USER'];
     $pass = $row['PASS'];
+    $rol = $row['ROL'];
 }
 
 
@@ -36,8 +37,14 @@ if ($user == $usuario and $pass == $password) {
         $emp = 1;
     }
 
-    header("Location: ../html/iniciousuario.php?emp=" . $emp);
-    die();
+
+    if ($rol == 0) {
+        header("Location: ../html/iniciousuario.php?emp=" . $emp);
+        die();
+    } else {
+        header("Location: ../html/inicioadmin.php");
+        die();
+    }
 } else {
     header("Location: ../index.php?log=" . $log);
 }

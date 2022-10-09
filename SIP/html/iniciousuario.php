@@ -13,7 +13,14 @@ $consulta2 = "SELECT * FROM redes WHERE NAME NOT IN (SELECT RED FROM red_usr WHE
 $result2 = mysqli_query($conn, $consulta2);
 $result3 = mysqli_query($conn, $consulta2);
 
-$emp = $_GET['emp'];
+if (isset($_GET['emp'])) {
+    $emp = $_GET['emp'];
+    if ($emp == null) {
+        $tiene = 1;
+    }
+}
+
+
 
 ?>
 <!DOCTYPE html>
@@ -36,7 +43,7 @@ $emp = $_GET['emp'];
         <div>
             <p><?PHP print($usr) ?></p>
             <a href="../PHP_VAL/logout.php">
-            <span><img src="../imgs/user.svg" alt="usuario" href></span>
+                <span><img src="../imgs/user.svg" alt="usuario" href></span>
             </a>
         </div>
     </header>
@@ -45,16 +52,9 @@ $emp = $_GET['emp'];
         </section>
         <section class="card-redes">
             <?php
-
-            if ($emp == null) {
-            ?>
-                <div>
-                    <tr>
-                        <p><?php print('NO TIENES REDES SOCIALES ASOCIADAS'); ?></p>
-                    </tr>
-                </div>
-            <?php } else {
-
+            if (isset($tiene)) {
+                echo ('<p>NO TIENES REDES SOCIALES ASOCIADAS<p>');
+            } else {
             ?>
                 <p>Estas son tus redes sociales asociadas</p>
                 <?php
@@ -116,7 +116,8 @@ $emp = $_GET['emp'];
                     </div>
                 </form>
             </section>
-        <?php } ?>
+        <?php
+        } ?>
     </main>
     <script src="./js/main.js"></script>
 </body>

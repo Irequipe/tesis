@@ -22,8 +22,7 @@ while ($row = $result->fetch_assoc()) {
     $rol = $row['ROL'];
 }
 
-
-if ($user == $usuario and $pass == $password) {
+if (password_verify($password, $pass)) {
     $consulta1 = "SELECT RED FROM red_usr where USER='$usuario'";
     $result1 = mysqli_query($conn, $consulta1);
 

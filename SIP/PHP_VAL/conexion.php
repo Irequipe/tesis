@@ -10,6 +10,12 @@ function OpenCon()
  
  return $conn;
  }
+
+if ($conn){
+    echo('Hola si sirve');
+}
+
+
  
 function CloseCon($conn)
  {

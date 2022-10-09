@@ -2,11 +2,11 @@
 
 function OpenCon()
  {
- $dbhost = "localhost";
- $dbuser = "GESTOR_BASE";
- $dbpass = "GesBase123";
- $db = "sip";
- $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+ $DB_HOST = "localhost";
+ $DB_USERNAME = "GESTOR_BASE";
+ $DB_PASSWORD = "GesBase123";
+ $DB = "sip";
+ $conn = new mysqli($DB_HOST, $DB_USERNAME, $DB_PASSWORD,$DB) or die("Connect failed: %s\n". $conn -> error);
  
  return $conn;
  }

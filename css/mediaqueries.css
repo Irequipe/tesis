@@ -1,0 +1,129 @@
+@media (max-width :600px){
+    .main-index form{
+        width: 280px;
+    }
+    .main-usuario{
+        width: 280px;
+    }
+    .main-usuario .card-redes{
+        width: 240px;
+    }
+    .header-inicio .title{
+        font-size: 1.5rem;
+    }
+    .header-inicio .option{
+        font-size: 0.7rem;
+    }
+    .header-inicio div p{
+        font-size: 0.8rem;
+    }
+    .header-inicio div img{
+        width: 1rem;
+    }
+    .card-redes div img{
+        width: 30px;
+    }
+    .card-redes p{
+        font-size: 0.8rem;
+    }
+    .card-redes div button{
+        width: 90px;
+        font-size: 0.8rem;
+    }
+    .anadir {
+        display: grid;
+        justify-self: center;
+        margin-left: 0;
+        height: 73%;
+    }
+    .anadir img{
+        width:30px;
+    }
+    .card-detalleizq{
+        font-size: 0.5rem;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .descripcion{
+
+    }
+    .card-detalleizq .title p{
+        font-size: 0.8rem;
+    }
+    .card-detalleizq .card img{
+        width: 2rem;
+    }
+    .card-detalleizq .card p{
+        font-size: 1rem;
+    }
+    .card-detalle div img{
+        width: 1rem;
+    }
+    .card-detalle div span{
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    .card-detalle div button{
+        width: 50px;
+        height: 1.5rem;
+        border-radius: 5px;
+        font-size: 0.5rem;
+        color: var(--morado);
+        border: 2px solid var(--morado);
+    }
+    .card-detalleizq .card p{
+        font-size: 0.8rem;
+    }
+    .card-detalleizq .card .descripcion{
+
+        font-size: 0.8rem;
+    }
+    .card-detalleizq{
+        height: 300px;
+    }
+    .main-nuevared{
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: auto;
+    }
+    .nuevared-mid label{
+        font-size: 1.2rem;
+    }
+    .nuevared-mid input{
+        font-size: 1.2rem;
+        width: 60%;
+    }
+    .nuevared-right button{
+        width: 80px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+    .nuevaredadmin-mid label{
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+    .main-nuevoparametro{
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: auto; 
+        height: 88.5vh;
+        justify-content: center;
+    }
+    .nparametro-right{
+        justify-content: center;
+    }
+    .yo{
+        justify-content: space-between;
+        text-align: left;
+        
+    }
+    .main-verdetalle{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}

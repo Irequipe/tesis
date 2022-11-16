@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+    --morado: #2D3047;
+    --azul-claro: ##FFF8F0;
+    --amarillo: #E0CA3C;
+    --lila: #a799b7;
+    --verde: #f4d06f;
+    --light: 300;
+    --regular: 400;
+    --bold: 700;
+}
+
+/* hola */
+body {
+    display: grid;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background: linear-gradient(0deg, rgb(4, 138, 129, 1) 40%, rgb(147, 183, 190, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-index {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.header-index h1 {
+    font-size: 4rem;
+    font-weight: var(--regular);
+    color: var(--morado);
+    margin-top: 3rem;
+    margin-bottom: 0;
+
+}
+
+.header-index h3 {
+    font-size: 2rem;
+    font-weight: var(--regular);
+    color: var(--morado);
+    text-align: center;
+}
+
+.main-index {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main-index form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.main-index form input {
+    width: 270px;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 2px solid var(--morado);
+    margin-bottom: 30px;
+}
+
+.main-index form button {
+    width: 150px;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--morado);
+    border: 2px solid var(--morado);
+}
+
+.main-index form p {
+    font-weight: var(--regular);
+    font-size: 1.05rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    width: 280px;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+/* iniciousuario */
+/* iniciousuario */
+
+.header-inicio {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--morado);
+    align-items: center;
+}
+
+.header-inicio .title {
+    font-size: 3rem;
+    font-weight: var(--regular);
+    color: var(--lila);
+    margin: 0;
+}
+
+.header-inicio .option {
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    color: var(--lila);
+    margin: 0 0 0 10px;
+}
+
+.header-inicio div p {
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    color: var(--lila);
+    margin: 10px 5px;
+}
+
+.header-inicio div a {
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    color: var(--lila);
+    margin: 10px 5px;
+}
+
+
+.header-inicio div {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-inicio div img {
+    width: 3.5rem;
+    filter: invert(66%) sepia(27%) saturate(234%) hue-rotate(226deg) brightness(91%) contrast(86%);
+}
+
+.main-usuario {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-flow: column;
+    margin: 0 auto;
+    padding: 0;
+    place-items: center;
+}
+
+.main-usuario .card-redes {
+    display: flex;
+    justify-content: normal;
+    align-content: space-around;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+}
+
+.main-usuario .card-redes div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-redes div img {
+    width: 60px;
+
+}
+
+.card-redes div button {
+    width: 150px;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--morado);
+    border: 2px solid var(--morado);
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+}
+
+.card-redes p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.anadir {
+    display: flex;
+    align-items: flex-start;
+    height: 45%;
+    margin-left: 10px;
+}
+
+.anadir img {
+    display: flex;
+    width: 60px;
+    justify-content: start;
+}
+
+/* verdetalle */
+/* verdetalle */
+
+.header-inicio .arrow {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.main-verdetalle {
+    display: flex;
+
+}
+
+.card-detalleizq {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 15rem;
+}
+
+.card-detalleizq .title p {
+    font-weight: var(--regular);
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.card-detalleizq .card div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-detalleizq .card img {
+    width: 5rem;
+    filter: invert(77%) sepia(6%) saturate(1133%) hue-rotate(142deg) brightness(94%) contrast(81%);
+}
+
+.card-detalleizq .card p {
+    font-weight: var(--regular);
+    font-size: 1.5rem;
+}
+
+.card-detalleizq .card .descripcion {
+    font-weight: var(--regular);
+    font-size: 1.2rem;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    height: 60%;
+}
+
+.card-detalle {
+
+    display: flex;
+     flex-wrap: inherit;
+     width: 95%;
+     justify-content: space-between;
+     flex-direction: column;
+     margin: 2px;
+     padding: 1rem;
+     text-align: left;
+ 
+ 
+ }
+
+ .card-detalle div {
+    display: flex;
+    flex-wrap: inherit;
+    width: 95%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2px;
+    padding: 0.5rem;
+    margin: 0px;
+}
+
+.card-detalle div img {
+    text-align: left;
+    width: 2rem;
+    filter: invert(77%) sepia(6%) saturate(1133%) hue-rotate(142deg) brightness(94%) contrast(81%);
+}
+
+.card-detalle div span {
+    font-size: 1.5rem;
+}
+
+.card-detalle div button {
+    max-width: 11rem;
+    max-height: 4rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--morado);
+    border: 2px solid var(--morado);
+    cursor: pointer;
+
+}
+
+.card-detalle .card-detalle-abierto {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    background-color: var(--lila);
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+    z-index: 5;
+}
+
+.card-detalle .card-detalle-abierto p {
+    width: 90%;
+    font-size: 0.8rem;
+    margin: 10px 10px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.card-detalle .card-detalle-abierto span {
+    position: relative;
+    border: 2px solid var(--morado);
+    color: var(--morado);
+    border-radius: 10px;
+    font-size: 2rem;
+    overflow-wrap: break-word;
+    left: 10px;
+    top: 5px;
+    cursor: pointer;
+
+}
+
+.card-detalle .inactive {
+    display: none;
+}
+
+/* nuevared */
+/* nuevared */
+.main-nuevared {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 88.5vh;
+}
+
+.nuevared-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nuevared-left p {
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+}
+
+.nuevared-mid {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.nuevared-mid p {
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.nuevared-mid div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.nuevared-mid label {
+    font-size: 2rem;
+    font-weight: var(--regular);
+}
+
+.nuevared-mid input {
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+    margin-bottom: 10px;
+}
+
+.nuevared-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nuevared-right button {
+    width: 90px;
+    height: 50px;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+/* nuevaredadmin */
+/* nuevaredadmin */
+
+.main-nuevaredadmin {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 88.5vh;
+}
+
+.nuevaredadmin-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nuevaredadmin-left p {
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+}
+
+.nuevaredadmin-mid {
+    display: grid;
+    height: auto;
+    grid-template-rows: 1fr 1fr 1fr 6fr;
+    align-content: center;
+    justify-items: center;
+}
+
+.nuevaredadmin-mid .bottom input {
+    width: 100%;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.nuevaredadmin-mid .bottom div img {
+    width: 30px;
+    margin-right: 5px;
+
+}
+
+.nuevaredadmin-mid .bottom div span {
+    font-size: 0.8rem;
+}
+
+.nuevaredadmin-mid p {
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.nuevaredadmin-mid .mid .insertar {
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: var(--regular);
+    overflow-wrap: break-word;
+    border: none;
+    text-align: center;
+    margin: 0px;
+}
+
+.nuevaredadmin-mid div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.nuevaredadmin-mid .bottom {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nuevaredadmin-mid .bottom div div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.nuevaredadmin-mid label {
+    font-size: 2rem;
+    font-weight: var(--regular);
+}
+
+.nuevaredadmin-mid input {
+    font-size: 1rem;
+    font-weight: var(--regular);
+    margin-bottom: 10px;
+}
+
+.nuevaredadmin-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nuevaredadmin-right #anadir-nredadmin {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    cursor: pointer;
+}
+
+.nuevaredadmin-right #anadir-nredadmin span {
+    font-size: 1rem;
+}
+
+.nuevaredadmin-right button {
+    width: 120px;
+    height: 50px;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* nuevoparametro */
+/* nuevoparametro */
+
+.main-nuevoparametro {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 88.5vh;
+}
+
+.nparametro-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.nparametro-left .uno {
+    font-size: 1rem;
+}
+
+.nparametro-left .dos {
+    font-size: 2rem;
+}
+
+.nparametro-left div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nparametro-left div img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nparametro-left div span {
+    font-size: 1.5rem;
+}
+
+.nparametro-mid {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nparametro-left input {
+    width: 90%;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding-top: 10px;
+
+}
+
+.nparametro-mid textarea {
+    width: 100%;
+    height: 200px;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 10px;
+    text-align: justify;
+
+}
+
+.nparametro-right {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.nparametro-right button {
+    width: 120px;
+    height: 50px;
+    border: 2px solid var(--morado);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+
+.imagen {
+    max-width: 2rem;
+    max-height: 2rem;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.spann {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.pDesc {
+    font-weight: var(--regular);
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.buttonDet {
+    min-height: 50px;
+    /* min-width: 150px; */
+    border-radius: 40px;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3 rem;
+    text-transform: unset;
+    white-space: nowrap;
+    cursor: pointer;
+}
